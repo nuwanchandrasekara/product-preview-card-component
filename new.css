@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --bg-color: hsl(30, 38%, 92%);
+    --bg-color-2: #fff;
+    --btn-color: hsl(158, 36%, 37%);
+    --txt-color: hsl(228, 12%, 48%);
+    --txt-color-2: hsl(212, 21%, 14%);
+    --font-1: 'Montserrat', sans-serif;
+    --font-2: 'Fraunces', sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-1);
+    font-size: 14px;
+    color: var(--txt-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    position: relative;
+    margin-top: 5%;
+}
+
+.img-container {
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product-image {
+    border-radius: 10px 0 0 10px !important;
+}
+
+.img-container img{
+    width: 20rem;
+    /* margin-top: 20%;  */
+}
+
+.text-container {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #FFF;
+    /* padding-left: 25px; */
+    /* margin: 60px 0 0 0; */
+    
+    padding: 10px 50px 10px 50px;
+    line-height: 2;
+}
+
+.text-container h2 {
+    font-family: var(--font-1);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: var(--txt-color);
+}
+
+h1 {
+    color: var(--txt-color-2);
+    font-family: var(--font-2);
+    margin: 15% 0;
+}
+
+p {
+    line-height: 2;
+}
+.btn {
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 10px;
+    color: #FFF;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: baseline;
+    font-family: var(--font-1);
+    font-weight: 700;
+    font-size: 14px;
+    width: 100%;
+    padding: 5% 0;
+    letter-spacing: 2px;
+}
+
+.cart {
+   margin-right: 25px;
+}
+
+.priceing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.price {
+    font-family: var(--font-2);
+    font-size: 34px;
+    color: var(--btn-color);
+}
+.p-price {
+    margin-left: 10%;
+    text-decoration: line-through;
+}
